@@ -38,7 +38,7 @@
     </div>
 
     <aura:if isTrue="{!v.newProduct}">
-        <c.LCTRL_ModalProduct productId="{!v.currentId}" />
+        <c.LCTRL_ModalProduct />
     </aura:if>
 
 </aura:component>

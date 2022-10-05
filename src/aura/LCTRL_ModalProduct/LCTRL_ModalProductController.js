@@ -1,9 +1,7 @@
 ({
 
     init: function(cmp,event){
-        let id = cmp.get('productId');
 
-        console.log(id)
     },
 
     handleChangeCategory: function(cmp, event){
@@ -62,7 +60,8 @@
                             "message": "Product created"
                         });
                         toastEvent.fire();
-                        this.newProductModalSwitcher();
+                        let events = $A.get('e.c:LCTRL_ToggleModal');
+                        events.fire();
                     }
                 }
             })
